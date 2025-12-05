@@ -156,7 +156,7 @@ export const ChatWindow: React.FC = () => {
           </div>
           <div>
             <h3 className="font-bold text-lg text-[#1D2D3A] tracking-tight leading-snug">Weston/Aventura<br className="sm:hidden" /> Endo Care</h3>
-            <p className="text-sm text-[#6C7B8A] font-medium">Daisy AI Assistant</p>
+            <p className="text-sm text-[#6C7B8A] font-medium">Daisy</p>
           </div>
         </div>
         

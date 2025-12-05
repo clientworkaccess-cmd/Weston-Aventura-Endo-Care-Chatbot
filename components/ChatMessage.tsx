@@ -30,7 +30,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({ message, onActionClick
         <div className={`flex flex-col ${isUser ? 'items-end' : 'items-start'}`}>
           {/* Sender Name */}
           <span className={`text-[10px] text-[#6C7B8A] mb-1 px-1 font-medium ${isUser ? 'text-right' : 'text-left'}`}>
-            {isUser ? 'You' : 'Daisy AI'}
+            {isUser ? 'You' : 'Daisy'}
           </span>
 
           <div className={`px-5 py-3.5 text-sm leading-relaxed overflow-hidden ${bubbleClass}`}>
