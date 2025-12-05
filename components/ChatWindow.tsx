@@ -103,28 +103,6 @@ export const ChatWindow: React.FC = () => {
 
     const botButtons: ActionButton[] = data.buttons || [];
 
-    // Intelligent Button Injection
-    // If no buttons are provided by the webhook, we scan the text for keywords
-    // and automatically append the relevant buttons to improve user experience.
-    if (botButtons.length === 0) {
-      const lowerText = botText.toLowerCase();
-
-      // Check for 'Book Appointment' related context
-      if (lowerText.includes('book appointment') || lowerText.includes('book an appointment') || lowerText.includes('schedule your appointment')) {
-        botButtons.push({ label: "Book an Appointment", value: "Book an Appointment", type: 'action' });
-      }
-
-      // Check for 'Contact Me' related context
-      if (lowerText.includes('contact me') || lowerText.includes('contact us') || lowerText.includes('reach out')) {
-         botButtons.push({ label: "Contact Me", value: "Contact Me", type: 'action' });
-      }
-
-      // Check for 'Reschedule' related context
-      if (lowerText.includes('reschedule')) {
-         botButtons.push({ label: "Reschedule an Appointment", value: "Reschedule an Appointment", type: 'action' });
-      }
-    }
-
     const botMsg: Message = {
       id: Date.now().toString(),
       text: botText,
