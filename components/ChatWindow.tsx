@@ -11,7 +11,6 @@ const CONFIG = {
   webhookUrl: 'https://n8n.srv1158432.hstgr.cloud/webhook/d912a276-534e-4ac0-9b59-458fbc389ca9',
   welcomeText: "Hello, this is Daisy from Weston/Aventura Endodontic Care, how can I help you today?",
   welcomeButtons: [
-    { label: "Ask a Question", value: "Ask a Question", type: 'action' },
     { label: "Book an Appointment", value: "Book an Appointment", type: 'action' },
     { label: "Contact Me", value: "Contact Me", type: 'action' },
     { label: "Reschedule an Appointment", value: "Reschedule an Appointment", type: 'action' }
